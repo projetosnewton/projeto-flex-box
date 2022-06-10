@@ -1,0 +1,21 @@
+.pai {
+    display: grid;
+    grid-template-columns: repeat(2, auto 300px);
+    gap: 20px;
+    place-content: center;
+}
+.item {
+    display: grid;
+    place-items: start;
+    place-self: start;
+}
+p {
+    text-align: justify;
+}
+a {
+    border-radius: 4px;
+    padding: 10px;
+    background-color: green;
+    color: black;
+    text-decoration: none;
+}
