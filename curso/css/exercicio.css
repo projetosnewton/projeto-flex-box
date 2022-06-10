@@ -1,0 +1,44 @@
+body.exercicio {
+    grid-template-rows: 120px 60px 1fr 60px;
+    grid-template-areas: "cabecalho" "navegacao" "conteudo" "rodape";
+}
+.conteudo {
+    height: calc(100vh - 240px);
+}
+.navegacao {
+    grid-area: navegacao;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    background-color: #555;
+}
+.navegacao > a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    font-size: 1.3rem;
+    background-color: rgb(33, 150, 243);
+    padding: 5px 10px;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.navegacao > a.verde {border: 2px solid #4caf50}
+.navegacao > a.verde {background-color:#4caf50 ;}
+
+.navegacao > a.vermelho {border: 2px solid #f44336}
+.navegacao > a.vermelho {background-color:#f44336 ;}
+
+.principal {
+    font-size: 1.5em;
+    
+}
+
+.principal > .titulo {
+    font-size: 1.2em;
+    font-weight: 300;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #999;
+    margin-bottom: 20px;
+}
+
